@@ -6,7 +6,7 @@ public class Combine {
     public int com3[] = new int[100];
     public int size = 0;
 
-    public void Combine(int m) {
+    Combine(int m) {
         size = m;
     }
 
@@ -40,7 +40,10 @@ public class Combine {
     }
 
     public static void main(String Args[]) {
-        Combine ob = new Combine();
+        System.out.println("Enter size of array");
+        Scanner in = new Scanner(System.in);
+        int size = in.nextInt();
+        Combine ob = new Combine(size);
         ob.inputarray();
         ob.mix();
         ob.display();
