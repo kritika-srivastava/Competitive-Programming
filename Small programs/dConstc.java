@@ -1,4 +1,4 @@
-class dConstc {
+public class dConstc {
     int a, b;
 
     dConstc() {
