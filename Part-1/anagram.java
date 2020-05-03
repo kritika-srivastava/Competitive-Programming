@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class anagram {
     String a = " ";
 
-    public void make_anagram(String prefix, String a) {
+    public void anagram(String prefix, String a) {
         if (a.length() <= 1) {
             System.out.println(prefix + a);
         } else {
@@ -11,7 +11,7 @@ public class anagram {
                 String cur = a.substring(i, i + 1);
                 String before = a.substring(0, i);
                 String after = a.substring(i + 1);
-                make_anagram(prefix + cur, before + after);
+                anagram(prefix + cur, before + after);
             }
         }
     }
@@ -23,6 +23,6 @@ public class anagram {
         String b = kb.nextLine();
         System.out.println("Enter the prefix:");
         String p = kb.nextLine();
-        ob.make_anagram(p, b);
+        ob.anagram(p, b);
     }
 }
