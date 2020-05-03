@@ -7,8 +7,8 @@ import java.util.*;
 public class queuelinkedlist {
     private static class node<T> {
         private final T data;
-        private node Next;
-        public node next;
+        private node<T> Next;
+        public node<T> next;
 
         public node(T data) {
             this.data = data;
@@ -30,7 +30,7 @@ public class queuelinkedlist {
     }
 
     public <T> void addlast(T data) {
-        node n = new node(data);
+        node<T> n = new node<>(data);
         if (isempty()) {
             n.next = first;
             first = n;
