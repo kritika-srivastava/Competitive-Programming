@@ -18,7 +18,7 @@ public class TextFill {
         t.whitespaceChars(0, ' ');
         t.eolIsSignificant(true);
         t.ordinaryChar('\n');
-        while (t.ttype != t.TT_EOF) {
+        while (t.ttype != StreamTokenizer.TT_EOF) {
             int n = t.nextToken();
             switch (n) {
                 case StreamTokenizer.TT_EOF:
