@@ -20,6 +20,7 @@ public class Combine {
         for (int i = 0; i < size; i++) {
             com2[i] = kb.nextInt();
         }
+        kb.close();
     }
 
     public void mix() {
@@ -47,5 +48,6 @@ public class Combine {
         ob.inputarray();
         ob.mix();
         ob.display();
+        in.close();
     }
 }
