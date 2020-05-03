@@ -1,6 +1,6 @@
 import java.util.Scanner;
-public class brackets
-{
+
+public class brackets {
 public static void main(String Args[])
 {
 Scanner kb=new Scanner(System.in);
