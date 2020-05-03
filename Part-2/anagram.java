@@ -8,7 +8,7 @@ public class anagram {
     String a = " ";
     static int f = 0;
 
-    static void anagram(String prefix, String a) {
+    void make_anagram(String prefix, String a) {
         if (a.length() <= 1) {
             System.out.println(prefix + a);
             f++;
@@ -17,7 +17,7 @@ public class anagram {
                 String cur = a.substring(i, i + 1);
                 String before = a.substring(0, i);
                 String after = a.substring(i + 1);
-                anagram(prefix + cur, before + after);
+                make_anagram(prefix + cur, before + after);
             }
         }
     }
@@ -28,7 +28,7 @@ public class anagram {
         System.out.println("Enter the string;");
         String a = kb.nextLine();
         String b = " ";
-        ob.anagram(b, a);
+        ob.make_anagram(b, a);
         System.out.println("Frequency = " + f);
     }
 }
