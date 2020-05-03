@@ -1,8 +1,6 @@
 import java.util.Scanner;
 
-public class Armstrong
-
-{
+public class Armstrong {
   public static void main(String Args[]) {
     Scanner kb = new Scanner(System.in);
     int num;

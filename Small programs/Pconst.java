@@ -1,4 +1,4 @@
-class Pconst {
+public class Pconst {
     int a, b;
 
     Pconst(int x, int y) {
