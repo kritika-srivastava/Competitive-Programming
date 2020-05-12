@@ -11,8 +11,8 @@ public class list_to_Array {
             m = kb.nextInt();
             ob.add(m);
         }
-        System.out.println("List:");
-        System.out.println(ob + " ");
+        System.out.println("Array from list:");
+        System.out.println(ob.toArray());
         kb.close();
         System.exit(0); 
     }
