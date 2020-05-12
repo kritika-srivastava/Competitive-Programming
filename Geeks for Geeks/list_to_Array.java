@@ -12,7 +12,8 @@ public class list_to_Array {
             ob.add(m);
         }
         System.out.println("Array from list:");
-        System.out.println(ob.toArray());
+        ob.toArray();
+        System.out.println(ob);
         kb.close();
         System.exit(0); 
     }
