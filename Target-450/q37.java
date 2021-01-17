@@ -39,7 +39,7 @@ class Solution {
     static ArrayList<Integer> spirallyTraverse(int a[][], int m, int n) {
         ArrayList<Integer> arr = new ArrayList<Integer>();
         int i, k = 0, l = 0;
-        while (k < m && l < n) {
+        while (k < m && l < n) { 
             for (i = l; i < n; ++i) {
                 arr.add(a[k][i]);
             }
