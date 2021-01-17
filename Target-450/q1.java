@@ -14,7 +14,7 @@ public class q1 {
         Scanner kb = new Scanner(System.in);
         int t = Integer.parseInt(kb.nextLine());
         while (t-- > 0) {
-            String s = kb.nextLine();
+            String s = kb.nextLine(); 
             char a[] = s.toCharArray();
             int n = a.length;
             for (int i = 0; i < n / 2; i++) {
