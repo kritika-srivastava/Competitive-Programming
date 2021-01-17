@@ -19,7 +19,7 @@ class Node
     }
 }
 
-class q_128
+class q128
 {
     public static void makeLoop(Node head, Node tail, int x){
         if (x == 0) return;
