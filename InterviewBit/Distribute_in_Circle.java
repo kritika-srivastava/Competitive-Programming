@@ -1,4 +1,4 @@
-
+// Link - https://www.interviewbit.com/problems/distribute-in-circle/
 public class Distribute_in_Circle {
     public int solve(int A, int B, int C) {
         if(A+C<=B)
