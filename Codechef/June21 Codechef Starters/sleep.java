@@ -3,17 +3,6 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
-
-
-
-
-// DID NOT WORK
-// WILL CORRECT TOMORROW
-
-
-
-
-
 /* Name of the class has to be "Main" only if the class is public. */
 class sleep {
     public static void main(String[] args) {
@@ -23,22 +12,24 @@ class sleep {
                 String st = kb.nextLine();
                 String ss[] = st.split(" ");
                 int tt = Integer.parseInt(ss[0]);
-                long h = Long.parseLong(ss[1]);
+                int h = Integer.parseInt(ss[1]);
                 String s = kb.nextLine();
-                int zeros = 0;
+                int zeros = h;
                 for (int i = 0; i < tt; i++) {
-                    if ( s.charAt(i) == '1' && zeros != 0) {
-                        h *=2;
-                        //System.out.println("H="+h);
-                        zeros = 0;
-                    } else if ( s.charAt(i) == '0') {
-                        h-=1;
-                        zeros+=1;
+                    if (s.charAt(i) == '0') {
+                        h -= 1;
+                        if (h == 0) {
+                            break;
+                        }
+
                     } else {
+                        if (zeros != h) {
+                            h *= 2;
+
+                        }
                     }
                 }
-                h-=zeros;
-                if (h <= 0) {
+                if (h == 0) {
                     System.out.println("YES");
                 } else {
                     System.out.println("NO");
