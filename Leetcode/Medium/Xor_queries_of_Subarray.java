@@ -20,7 +20,6 @@ class Xor_queries_of_Subarray {
         pre[i] = arr[i] ^ pre[i - 1];
       }
     }
-
     for (int i = 0; i < queries.length; i++) {
       if (queries[i][0] == queries[i][1]) {
         ret[i] = arr[queries[i][1]];
