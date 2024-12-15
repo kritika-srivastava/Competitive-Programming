@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": [
+        ".",
+        "CSES",
+        "Codeforces",
+        "Codechef",
+        "Geeks for Geeks"
+    ],
+    "java.project.referencedLibraries": []
+}
