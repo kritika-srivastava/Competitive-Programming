@@ -1,7 +1,13 @@
 package Leetcode.Medium;
 
 import javax.swing.tree.TreeNode;
-
+/**
+ * E:\GithubProjects\Competitive-Programming\Leetcode\Medium\ElementsInContaminatedBinaryTree.java
+ * @author Kritika Srivastava
+ * @since February 21, 2025
+ *
+ * Link: https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/
+ */
 public class ElementsInContaminatedBinaryTree {
     /*
      * Definition for a binary tree node.
