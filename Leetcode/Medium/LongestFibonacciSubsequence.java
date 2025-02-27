@@ -3,7 +3,7 @@ package Leetcode.Medium;
 import java.util.HashSet;
 
 /**
- * E:\GithubProjects\Competitive-Programming\Leetcode\Medium\LongestFibonacciSubsequece.java
+ * E:\GithubProjects\Competitive-Programming\Leetcode\Medium\LongestFibonacciSubsequence.java
  * 
  * @author Kritika Srivastava
  * @since February 27, 2025
@@ -11,7 +11,7 @@ import java.util.HashSet;
  *        Link:
  *        https://leetcode.com/problems/length-of-longest-fibonacci-subsequence
  */
-public class LongestFibonacciSubsequece {
+public class LongestFibonacciSubsequence {
     public int lenLongestFibSubseq(int[] arr) {
         int n = arr.length, ans = 0, num1 = 0, num2 = 0, num3 = 0, curr = 0;
 
